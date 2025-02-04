@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Submit Your Details</title>
+</head>
+<body>
+    <h1>Submit Your Details</h1>
+    <form action="/submit" method="post" enctype="multipart/form-data">
+        <div>
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required>
+        </div>
+        <br>
+        <div>
+            <label for="id_number">ID Number:</label>
+            <input type="text" id="id_number" name="id_number" required>
+        </div>
+        <br>
+        <div>
+            <label for="pdf_file">Upload PDF File:</label>
+            <input type="file" id="pdf_file" name="pdf_file" accept=".pdf" required>
+        </div>
+        <br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
